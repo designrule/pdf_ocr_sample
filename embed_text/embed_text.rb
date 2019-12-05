@@ -16,5 +16,5 @@ Prawn::Document.generate("transparent_text.pdf",
       pdf.text_box text, :at=>xy
     }
   end
-  system('pdftk '+ARGV[0]+' multistamp transparent_text.pdf output '+ARGV[1])
 end
+system('pdftk '+ARGV[0]+' multistamp transparent_text.pdf output '+ARGV[1])
